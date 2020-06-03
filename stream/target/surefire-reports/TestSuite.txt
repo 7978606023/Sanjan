@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.914 sec <<< FAILURE!
+checkOdd(com.test.stream.FilterTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: Lists differ at element [0]: 1 != 2 expected [1] but found [2]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:993)
+	at com.test.stream.FilterTest.checkOdd(FilterTest.java:42)
+
+checkZero(com.test.stream.FilterTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: lists don't have the same size expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:1017)
+	at org.testng.Assert.assertEquals(Assert.java:993)
+	at com.test.stream.FilterTest.checkZero(FilterTest.java:52)
+
+PositiveNegetive(com.test.stream.NumberStreamTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.test.stream.NumberStreamTest.PositiveNegetive(NumberStreamTest.java:36)
+

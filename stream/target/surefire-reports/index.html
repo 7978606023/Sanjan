@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">37 methods, 3 failed,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="PositiveNegetive">PositiveNegetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.FilterTest" hash-for-method="checkOdd">checkOdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.FilterTest" hash-for-method="checkZero">checkZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="Null">Null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.MapTest" hash-for-method="TestWithEvenNum">TestWithEvenNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.MapTest" hash-for-method="TestWithMinusNum">TestWithMinusNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.MapTest" hash-for-method="TestWithOddNum">TestWithOddNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.MapTest" hash-for-method="TestWithZero">TestWithZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.CompareTest$ComparatorTest" hash-for-method="Zero">Zero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.FilterTest" hash-for-method="checkEven">checkEven</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.StringLowerCaseTest" hash-for-method="countsLowercaseLetterExample">countsLowercaseLetterExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="duplicateNum">duplicateNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.DayTest" hash-for-method="example">example</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.StringLowerCaseTest" hash-for-method="findsMostLowercaseString">findsMostLowercaseString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="negetive">negetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="negetive">negetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.CompareTest$ComparatorTest" hash-for-method="negetiveZero">negetiveZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.CompareTest$ComparatorTest" hash-for-method="negitive">negitive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.ComperatorTest" hash-for-method="negitive">negitive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.StringLowerCaseTest" hash-for-method="noLowercaseLettersInAnEmptyString">noLowercaseLettersInAnEmptyString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.StringLowerCaseTest" hash-for-method="noStringReturnedForEmptyList">noStringReturnedForEmptyList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.ComperatorTest" hash-for-method="numbers">numbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.CompareTest$ComparatorTest" hash-for-method="positive">positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="positive">positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.ComperatorTest" hash-for-method="positive">positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="positive">positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="positiveNegetive">positiveNegetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.ComperatorTest" hash-for-method="positiveNegetive">positiveNegetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.CompareTest$ComparatorTest" hash-for-method="positiveNegetive">positiveNegetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="positiveZero">positiveZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.StringLowerCaseTest" hash-for-method="suppoertsNoLowercaseLetters">suppoertsNoLowercaseLetters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.DemoMethodTest" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.MapTest" hash-for-method="testWithMultiplyNum">testWithMultiplyNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.ComperatorTest" hash-for-method="zero">zero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="zero">zero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.NumberStreamTest" hash-for-method="zero">zero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.test.stream.BinaryTest" hash-for-method="zeroNegetive">zeroNegetive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.stream.FilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOdd">
+                  </a> <!-- checkOdd -->
+                  <span class="method-name">checkOdd</span>
+                  <div class="stack-trace">java.lang.AssertionError: Lists differ at element [0]: 1 != 2 expected [1] but found [2]
+	at com.test.stream.FilterTest.checkOdd(FilterTest.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkZero">
+                  </a> <!-- checkZero -->
+                  <span class="method-name">checkZero</span>
+                  <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [2] but found [1]
+	at com.test.stream.FilterTest.checkZero(FilterTest.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.stream.NumberStreamTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PositiveNegetive">
+                  </a> <!-- PositiveNegetive -->
+                  <span class="method-name">PositiveNegetive</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.stream.NumberStreamTest.PositiveNegetive(NumberStreamTest.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.StringLowerCaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="countsLowercaseLetterExample">
+                  </a> <!-- countsLowercaseLetterExample -->
+                  <span class="method-name">countsLowercaseLetterExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findsMostLowercaseString">
+                  </a> <!-- findsMostLowercaseString -->
+                  <span class="method-name">findsMostLowercaseString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noLowercaseLettersInAnEmptyString">
+                  </a> <!-- noLowercaseLettersInAnEmptyString -->
+                  <span class="method-name">noLowercaseLettersInAnEmptyString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noStringReturnedForEmptyList">
+                  </a> <!-- noStringReturnedForEmptyList -->
+                  <span class="method-name">noStringReturnedForEmptyList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="suppoertsNoLowercaseLetters">
+                  </a> <!-- suppoertsNoLowercaseLetters -->
+                  <span class="method-name">suppoertsNoLowercaseLetters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.DayTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="example">
+                  </a> <!-- example -->
+                  <span class="method-name">example</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.FilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEven">
+                  </a> <!-- checkEven -->
+                  <span class="method-name">checkEven</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.MapTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestWithEvenNum">
+                  </a> <!-- TestWithEvenNum -->
+                  <span class="method-name">TestWithEvenNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestWithMinusNum">
+                  </a> <!-- TestWithMinusNum -->
+                  <span class="method-name">TestWithMinusNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestWithOddNum">
+                  </a> <!-- TestWithOddNum -->
+                  <span class="method-name">TestWithOddNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestWithZero">
+                  </a> <!-- TestWithZero -->
+                  <span class="method-name">TestWithZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMultiplyNum">
+                  </a> <!-- testWithMultiplyNum -->
+                  <span class="method-name">testWithMultiplyNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.DemoMethodTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.BinaryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negetive">
+                  </a> <!-- negetive -->
+                  <span class="method-name">negetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positive">
+                  </a> <!-- positive -->
+                  <span class="method-name">positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveNegetive">
+                  </a> <!-- positiveNegetive -->
+                  <span class="method-name">positiveNegetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZero">
+                  </a> <!-- positiveZero -->
+                  <span class="method-name">positiveZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zero">
+                  </a> <!-- zero -->
+                  <span class="method-name">zero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zeroNegetive">
+                  </a> <!-- zeroNegetive -->
+                  <span class="method-name">zeroNegetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.NumberStreamTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Null">
+                  </a> <!-- Null -->
+                  <span class="method-name">Null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicateNum">
+                  </a> <!-- duplicateNum -->
+                  <span class="method-name">duplicateNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negetive">
+                  </a> <!-- negetive -->
+                  <span class="method-name">negetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positive">
+                  </a> <!-- positive -->
+                  <span class="method-name">positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zero">
+                  </a> <!-- zero -->
+                  <span class="method-name">zero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.ComperatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negitive">
+                  </a> <!-- negitive -->
+                  <span class="method-name">negitive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="numbers">
+                  </a> <!-- numbers -->
+                  <span class="method-name">numbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positive">
+                  </a> <!-- positive -->
+                  <span class="method-name">positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveNegetive">
+                  </a> <!-- positiveNegetive -->
+                  <span class="method-name">positiveNegetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zero">
+                  </a> <!-- zero -->
+                  <span class="method-name">zero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.stream.CompareTest$ComparatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Zero">
+                  </a> <!-- Zero -->
+                  <span class="method-name">Zero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negetiveZero">
+                  </a> <!-- negetiveZero -->
+                  <span class="method-name">negetiveZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negitive">
+                  </a> <!-- negitive -->
+                  <span class="method-name">negitive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positive">
+                  </a> <!-- positive -->
+                  <span class="method-name">positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveNegetive">
+                  </a> <!-- positiveNegetive -->
+                  <span class="method-name">positiveNegetive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.stream.BinaryTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.CompareTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.ComperatorTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.DayTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.DemoMethodTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.FilterTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.MapTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.NumberStreamTest&quot;/&gt;
+      &lt;class name=&quot;com.test.stream.StringLowerCaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(37);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'countsLowercaseLetterExample')
+data.setCell(0, 2, 'com.test.stream.StringLowerCaseTest')
+data.setCell(0, 3, 43);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'example')
+data.setCell(1, 2, 'com.test.stream.DayTest')
+data.setCell(1, 3, 27);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Zero')
+data.setCell(2, 2, 'com.test.stream.CompareTest$ComparatorTest')
+data.setCell(2, 3, 20);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'negetive')
+data.setCell(3, 2, 'com.test.stream.BinaryTest')
+data.setCell(3, 3, 6);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'findsMostLowercaseString')
+data.setCell(4, 2, 'com.test.stream.StringLowerCaseTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'negitive')
+data.setCell(5, 2, 'com.test.stream.CompareTest$ComparatorTest')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'negitive')
+data.setCell(6, 2, 'com.test.stream.ComperatorTest')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'noLowercaseLettersInAnEmptyString')
+data.setCell(7, 2, 'com.test.stream.StringLowerCaseTest')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Null')
+data.setCell(8, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkOdd')
+data.setCell(9, 2, 'com.test.stream.FilterTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'positive')
+data.setCell(10, 2, 'com.test.stream.BinaryTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'positiveZero')
+data.setCell(11, 2, 'com.test.stream.BinaryTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TestWithEvenNum')
+data.setCell(12, 2, 'com.test.stream.MapTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test')
+data.setCell(13, 2, 'com.test.stream.DemoMethodTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'negetiveZero')
+data.setCell(14, 2, 'com.test.stream.CompareTest$ComparatorTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'zero')
+data.setCell(15, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkEven')
+data.setCell(16, 2, 'com.test.stream.FilterTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'numbers')
+data.setCell(17, 2, 'com.test.stream.ComperatorTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TestWithMinusNum')
+data.setCell(18, 2, 'com.test.stream.MapTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'PositiveNegetive')
+data.setCell(19, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'positive')
+data.setCell(20, 2, 'com.test.stream.CompareTest$ComparatorTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'duplicateNum')
+data.setCell(21, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'positive')
+data.setCell(22, 2, 'com.test.stream.ComperatorTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'zeroNegetive')
+data.setCell(23, 2, 'com.test.stream.BinaryTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testWithMultiplyNum')
+data.setCell(24, 2, 'com.test.stream.MapTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'positive')
+data.setCell(25, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'positiveNegetive')
+data.setCell(26, 2, 'com.test.stream.BinaryTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'positiveNegetive')
+data.setCell(27, 2, 'com.test.stream.ComperatorTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'zero')
+data.setCell(28, 2, 'com.test.stream.ComperatorTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'negetive')
+data.setCell(29, 2, 'com.test.stream.NumberStreamTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'zero')
+data.setCell(30, 2, 'com.test.stream.BinaryTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'noStringReturnedForEmptyList')
+data.setCell(31, 2, 'com.test.stream.StringLowerCaseTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'suppoertsNoLowercaseLetters')
+data.setCell(32, 2, 'com.test.stream.StringLowerCaseTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'positiveNegetive')
+data.setCell(33, 2, 'com.test.stream.CompareTest$ComparatorTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TestWithZero')
+data.setCell(34, 2, 'com.test.stream.MapTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'TestWithOddNum')
+data.setCell(35, 2, 'com.test.stream.MapTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkZero')
+data.setCell(36, 2, 'com.test.stream.FilterTest')
+data.setCell(36, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 121 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.BinaryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.DemoMethodTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.FilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.MapTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUP</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.NumberStreamTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.BinaryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">negetive</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positive</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveNegetive</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZero</span>
+                <span class="method-start">92 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zero</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zeroNegetive</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.CompareTest$ComparatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Zero</span>
+                <span class="method-start">97 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negetiveZero</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negitive</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positive</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveNegetive</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.ComperatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">negitive</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">numbers</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positive</span>
+                <span class="method-start">130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveNegetive</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zero</span>
+                <span class="method-start">132 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.DayTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">example</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.DemoMethodTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.FilterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkEven</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkOdd</span>
+                <span class="method-start">168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkZero</span>
+                <span class="method-start">174 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.MapTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestWithEvenNum</span>
+                <span class="method-start">176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestWithMinusNum</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestWithOddNum</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestWithZero</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithMultiplyNum</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.NumberStreamTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Null</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PositiveNegetive</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">duplicateNum</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negetive</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positive</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zero</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.stream.StringLowerCaseTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">countsLowercaseLetterExample</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findsMostLowercaseString</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noLowercaseLettersInAnEmptyString</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noStringReturnedForEmptyList</span>
+                <span class="method-start">244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">suppoertsNoLowercaseLetters</span>
+                <span class="method-start">247 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
